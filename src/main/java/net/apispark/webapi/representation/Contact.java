@@ -17,6 +17,7 @@ public class Contact implements Serializable {
     private Boolean active;
     private Integer rank;
     private String companyId;
+    private int gender;
 
     public Contact(){}
 
@@ -51,6 +52,15 @@ public class Contact implements Serializable {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+    
+    @JsonProperty(required = true)
+    public int getGender() {
+        return gender;
+    }
+
+    public void setGender(int gender) {
+        this.gender = gender;
     }
 
     public String getAvatar() {
