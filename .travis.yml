@@ -1,3 +1,5 @@
 language: java
-script: 
-- mvn test
+deploy:
+  provider: heroku
+  app: afternoon-badlands-24178
+  api_key: "fe795db4-166f-4e26-95ae-83d1e6eb8fb6"

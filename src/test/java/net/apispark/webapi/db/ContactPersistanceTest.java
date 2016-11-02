@@ -18,6 +18,6 @@ public class ContactPersistanceTest {
     	Contact contact = new Contact();
     	contact.setId("a111");
     	ContactPersistence.INSTANCE.addContact(contact);
-    	Assert.assertEquals(ContactPersistence.INSTANCE.getContact("a1"), contact);
+    	Assert.assertEquals(ContactPersistence.INSTANCE.getContact("a111"), contact);
     }
 }
