@@ -16,7 +16,7 @@ public class ContactPersistanceTest {
     @Test
     public void ask_id() throws Exception {
     	Contact contact = new Contact();
-    	contact.setId("a11");
+    	contact.setId("a111");
     	ContactPersistence.INSTANCE.addContact(contact);
     	Assert.assertEquals(ContactPersistence.INSTANCE.getContact("a1"), contact);
     }
